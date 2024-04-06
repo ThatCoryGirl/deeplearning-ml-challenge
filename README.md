@@ -115,35 +115,7 @@ Using your knowledge of TensorFlow, optimize your model to achieve a target pred
 
   - Save and export your results to an HDF5 file. Name the file `AlphabetSoupCharity_Optimization.h5`.
 
-# **Report on the Neural Network Model**
-
-For this part of the assignment, you’ll write a report on the performance of the deep learning model you created for Alphabet Soup.
-
-The report should contain the following:
-
-  - **Overview of the analysis:** Explain the purpose of this analysis.
-
-  - **Results:** Using bulleted lists and images to support your answers, address the following questions:
-
-  - Data Preprocessing
-
-    - What variable(s) are the target(s) for your model?
-
-    - What variable(s) are the features for your model?
-
-    - What variable(s) should be removed from the input data because they are neither targets nor features?
-
-  - Compiling, Training, and Evaluating the Model
-
-    - How many neurons, layers, and activation functions did you select for your neural network model, and why?
-
-    - Were you able to achieve the target model performance?
-
-    - What steps did you take in your attempts to increase model performance?
-
-**Summary:** Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
-
-**Step 5: Copy Files Into Your Repository**
+**Step 4: Copy Files Into Your Repository**
 
 Now that you're finished with your analysis in Google Colab, you need to get your files into your repository for final submission.
 
@@ -152,6 +124,56 @@ Now that you're finished with your analysis in Google Colab, you need to get you
   - Move them into your Deep Learning Challenge directory in your local repository.
 
   - Push the added files to GitHub.
+
+
+
+# **Report on the Neural Network Model**
+
+**Overview of the analysis:**
+
+The purpose of this analysis is to develop a deep learning model using a feedforward neural network to predict the success of funding applications for Alphabet Soup, a philanthropic organization. The model aims to classify funding applications as successful or unsuccessful based on various input features.
+
+  - **Data Preprocessing**
+
+    - Target Variable(s):
+
+      - The target variable for the model is the binary outcome indicating whether a funding application was successful or not (ie: **IS_SUCCESSFUL**).
+
+    - Features:
+
+      - The features for this model include various input variables such as application type, organization classification, and other relevant factors provided in the dataset.
+
+    - Variables Removed:
+
+      - The variables `EIN`, `NAME`, `SPECIAL_CONSIDERATIONS`, and `STATUS` were removed from the input data as they are neither targets nor features for the model.
+
+  - **Compiling, Training, and Evaluating the Model**
+
+    - Model Architecture:
+
+      - The neural network model consisted of two hidden layers, each with 64 neurons and ReLU activation functions. The output layer had a single neuron for binary classification.
+
+      - ReLU activation functions were chosen for the hidden layers due to their effectiveness in addressing the vanishing gradient problem and speeding up convergence.
+
+    - Model Performance:
+
+      - The model achieved an accuracy of ~73.01% and a mean squared error (MSE) loss of ~0.1859 on the test dataset.
+
+      - While the model's accuracy is "decent", further optimization may be required to meet specific performance targets or improve generalization.
+
+    - Steps to Increase Model Performance:
+
+      - Experimentation was done with different architectures, varying the number of neurons, layers, or activation functions.
+
+      - Tuning hyperparameters such as learning rate, batch size, and dropout rate to improve convergence and prevent overfitting took place.
+
+      - Feature engineering, including selecting relevant features, encoding categorical variables effectively, and handling missing values appropriately increased performance.
+
+  - **Summary**
+
+The deep learning model was developed by using a feedforward neural network which demonstrated reasonable performance in predicting the success of funding applications for Alphabet Soup. However, further optimization and fine-tuning would be necessary to achieve higher accuracy and better generalization on unseen data.
+
+For a different approach to solving this classification problem, a convolutional neural network (CNN) could be considered. CNNs are well-suited for tasks involving image data or sequential data, such as text classification. By leveraging the spatial hierarchies present in the input data, CNNs could capture intricate patterns and relationships, potentially improving classification accuracy. Additionally, techniques like transfer learning, where pre-trained CNN models are fine-tuned on the specific dataset, could be explored to leverage the knowledge learned from large-scale datasets. Overall, a CNN may offer better performance and generalization for the classification problem at hand.
 
 # **Citations:**
 
