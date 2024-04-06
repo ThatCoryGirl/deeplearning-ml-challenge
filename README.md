@@ -159,14 +159,4 @@ IRS. Tax Exempt Organization Search Bulk Data Downloads. https://www.irs.gov/Lin
 
 Instructor: [Othmane Benyoucef](https://www.linkedin.com/in/othmane-benyoucef-219a8637/)
 
-LSTM Model Suggstion: [Michael Flesch](https://www.linkedin.com/in/michael-flesch/)
-
-LSTM Model Building:
-
-[Machine Learning Master](https://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/)
-
-[Alpha Quantum](https://www.alpha-quantum.com/blog/long-short-term-memory-lstm-with-python/long-short-term-memory-lstm-with-python/)
-
-[DataCamp](https://www.datacamp.com/tutorial/lstm-python-stock-market)
-
-[tf.keras.layers.LSTM](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM)
+Model Suggestion: [Michael Flesch](https://www.linkedin.com/in/michael-flesch/)
